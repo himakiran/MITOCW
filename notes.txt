@@ -1,0 +1,5 @@
+ Compile command to embed debugging info and disable optimization
+
+gcc -g -O0 -Wall hello.c -o hello.o
+
+
