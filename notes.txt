@@ -1,5 +1,18 @@
  Compile command to embed debugging info and disable optimization
 
 gcc -g -O0 -Wall hello.c -o hello.o
+-g for gdb
+-Wall for enabling all warnings
+-O0 for no optimization
 
+To use gdb
+>gdb hello.o
 
+gdb commands : break linenumber/break file:linenumber , run-run prog  , c-continue execution, next: execute next line
+step-execute next line or step into function , quit/q  print expression 
+frame/where print current stack contents where -full print var values also
+help comand in program help 
+
+gdb helper document : https://web.eecs.umich.edu/~sugih/pointers/gdbQS.html
+
+diganose: mem related problems : valgrind
